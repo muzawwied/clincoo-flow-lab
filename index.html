@@ -110,7 +110,6 @@ tailwind.config = {
 
 <!-- ============ 1. DIAGRAM ALUR BIKIN WEB ============ -->
 <section class="max-w-5xl mx-auto px-6 pb-4">
-  <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-10">
     <div class="flex items-center justify-between flex-wrap gap-3">
       <div>
         <h2 class="text-xl font-bold text-slate-900">Alur Bikin Website di Clincoo</h2>
@@ -121,7 +120,6 @@ tailwind.config = {
         Putar ulang
       </button>
     </div>
-
     <div class="mt-8 overflow-x-auto">
       <svg id="flowDiagram" viewBox="0 0 880 790" class="w-full min-w-[640px] h-auto select-none" role="img" aria-label="Alur bikin website: chat, rencana, tulis kode, uji, deploy, online">
         <defs>
@@ -193,12 +191,10 @@ tailwind.config = {
         <text x="456" y="702" font-size="11.5" fill="#94a3b8">deploy</text>
       </svg>
     </div>
-  </div>
 </section>
 
 <!-- ============ 2. SIMULASI CHAT (GAYA CHAT CLINCOO ASLI) ============ -->
-<section class="max-w-5xl mx-auto px-6 pt-6 pb-16">
-  <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-10">
+<section class="max-w-5xl mx-auto px-6 pt-2 pb-16">
     <h2 class="text-xl font-bold text-slate-900">Simulasi Chat — persis halaman chat Clincoo</h2>
     <p class="text-sm text-slate-500">Thinking shimmer, kartu toolcalls, checkpoint "Lanjutkan", sampai "Situs Anda aktif di…" — semua dari repo asli. Kartu toolcalls bisa diklik untuk dibuka.</p>
 
@@ -329,8 +325,7 @@ function cardStatus(card, text) { card.text.textContent = text; scroll(); }
 
 function checkpointCard() {
   const html = `
-    <div>Checkpoint — tugas berhenti sebentar.</div>
-    <div class="mt-2 font-semibold">Sudah selesai:</div>
+    <div class="font-semibold">Sudah selesai:</div>
     <ol class="list-decimal ml-5 mt-1 space-y-0.5">
       <li>✓ write_file — index.html</li>
       <li>✓ write_file — css/style.css</li>
