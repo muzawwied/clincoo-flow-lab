@@ -31,7 +31,7 @@ tailwind.config = {
   @keyframes draw-in { to { stroke-dashoffset: 0; } }
   .node-pop { opacity: 0; transform: translateY(8px); animation: pop .5s ease forwards; }
   @keyframes pop { to { opacity: 1; transform: translateY(0); } }
-  .flow-dot { fill: #059669; filter: drop-shadow(0 0 3px rgba(5,150,105,.6)); }
+  .flow-dot { fill: #111827; filter: drop-shadow(0 0 3px rgba(17,24,39,.45)); }
 
   /* ====== CHAT — disalin dari halaman chat Clincoo asli ====== */
   .shimmer-search {
@@ -97,13 +97,13 @@ tailwind.config = {
 
   @keyframes blink { 50% { opacity: 0; } }
   .caret { border-right: 2px solid #111827; animation: blink 0.9s steps(1) infinite; }
-  .live-url { color: #047857; font-family: 'SF Mono', Consolas, monospace; font-size: 13.5px; text-decoration: underline; text-decoration-color: #a7f3d0; }
+  .live-url { color: #111827; font-family: 'SF Mono', Consolas, monospace; font-size: 13.5px; text-decoration: underline; text-decoration-color: #9ca3af; }
 </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen">
 
 <header class="max-w-3xl mx-auto px-6 pt-12 pb-6 text-center">
-  <span class="inline-block text-xs font-semibold tracking-widest uppercase text-emerald-700 bg-emerald-100 rounded-full px-3 py-1">Testing · Clincoo</span>
+  <span class="inline-block text-xs font-semibold tracking-widest uppercase text-slate-900 bg-white border border-slate-200 rounded-full px-3 py-1">Testing · Clincoo</span>
   <h1 class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Demo Alur &amp; Simulasi Chat</h1>
   <p class="mt-2 text-slate-500 text-sm sm:text-base">Semua elemen di halaman ini dibuat murni dengan code (SVG + JS), bukan gambar atau video.</p>
 </header>
@@ -115,7 +115,7 @@ tailwind.config = {
         <h2 class="text-xl font-bold text-slate-900">Alur Bikin Website di Clincoo</h2>
         <p class="text-sm text-slate-500">Dari chat pertama sampai situs online.</p>
       </div>
-      <button id="replayBtn" class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full px-4 py-2 transition">
+      <button id="replayBtn" class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-slate-900 hover:bg-black rounded-full px-4 py-2 transition">
         <i class="ph-bold ph-arrow-counter-clockwise text-[15px]"></i>
         Putar ulang
       </button>
@@ -127,7 +127,7 @@ tailwind.config = {
             <path d="M0 1 L8 5 L0 9" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
           </marker>
           <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stop-color="#047857"/><stop offset="1" stop-color="#065f46"/>
+            <stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#000000"/>
           </linearGradient>
         </defs>
 
@@ -151,29 +151,29 @@ tailwind.config = {
 
         <!-- 1. Memahami & merencanakan -->
         <g class="node-pop" style="animation-delay:.1s">
-          <rect x="140" y="140" width="600" height="104" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
-          <text x="440" y="178" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">1 · Memahami &amp; Merencanakan</text>
+          <rect x="140" y="140" width="600" height="104" rx="16" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+          <text x="440" y="178" text-anchor="middle" font-size="16" font-weight="800" fill="#111827">1 · Memahami &amp; Merencanakan</text>
           <text x="440" y="204" text-anchor="middle" font-size="13" fill="#64748b">AI menganalisis permintaan → struktur, halaman, gaya desain</text>
         </g>
 
         <!-- 2. Menulis kode -->
         <g class="node-pop" style="animation-delay:.4s">
-          <rect x="140" y="284" width="600" height="104" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
-          <text x="440" y="322" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">2 · Menulis Kode</text>
+          <rect x="140" y="284" width="600" height="104" rx="16" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+          <text x="440" y="322" text-anchor="middle" font-size="16" font-weight="800" fill="#111827">2 · Menulis Kode</text>
           <text x="440" y="348" text-anchor="middle" font-size="13" fill="#64748b">index.html · css/ · js/ · halaman — ditulis satu per satu</text>
         </g>
 
         <!-- 3. Uji & perbaiki -->
         <g class="node-pop" style="animation-delay:.7s">
-          <rect x="140" y="428" width="600" height="104" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
-          <text x="440" y="466" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">3 · Uji &amp; Perbaiki</text>
+          <rect x="140" y="428" width="600" height="104" rx="16" fill="#ffffff" stroke="#111827" stroke-width="2"/>
+          <text x="440" y="466" text-anchor="middle" font-size="16" font-weight="800" fill="#111827">3 · Uji &amp; Perbaiki</text>
           <text x="440" y="492" text-anchor="middle" font-size="13" fill="#64748b">Verifikasi struktur, cek error, perbaiki sampai benar</text>
         </g>
 
         <!-- 4. Deploy -->
         <g class="node-pop" style="animation-delay:1s">
-          <rect x="140" y="572" width="600" height="104" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="1.6"/>
-          <text x="440" y="610" text-anchor="middle" font-size="16" font-weight="800" fill="#065f46">4 · Deploy</text>
+          <rect x="140" y="572" width="600" height="104" rx="16" fill="#f3f4f6" stroke="#111827" stroke-width="1.6"/>
+          <text x="440" y="610" text-anchor="middle" font-size="16" font-weight="800" fill="#111827">4 · Deploy</text>
           <text x="440" y="636" text-anchor="middle" font-size="13" fill="#64748b">Unggah ke server deployment · aktifkan domain</text>
         </g>
 
@@ -181,7 +181,7 @@ tailwind.config = {
         <g class="node-pop" style="animation-delay:1.3s">
           <rect x="140" y="716" width="600" height="74" rx="16" fill="url(#gTop)"/>
           <text x="440" y="748" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">🎉 Situs Online</text>
-          <text x="440" y="772" text-anchor="middle" font-size="13" fill="#a7f3d0" font-family="Consolas, monospace">https://kedaikopi.clincoo.biz.id</text>
+          <text x="440" y="772" text-anchor="middle" font-size="13" fill="#d1d5db" font-family="Consolas, monospace">https://kedaikopi.clincoo.biz.id</text>
         </g>
 
         <text x="456" y="126" font-size="11.5" fill="#94a3b8">chat</text>
@@ -200,10 +200,10 @@ tailwind.config = {
 
     <div class="mt-6 mx-auto max-w-2xl rounded-2xl border border-slate-200 bg-white overflow-hidden">
       <div class="flex items-center gap-3 px-4 py-3 bg-white border-b border-slate-200">
-        <div class="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-sm">C</div>
+        <div class="w-9 h-9 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold text-sm">C</div>
         <div>
           <div class="text-sm font-bold text-slate-900 leading-tight">Clincoo</div>
-          <div class="text-xs text-emerald-600 font-medium">online</div>
+          <div class="text-xs text-slate-400 font-medium">online</div>
         </div>
         <span class="ml-auto text-[11px] font-semibold text-slate-400 border border-slate-200 rounded-full px-2.5 py-1">Build</span>
       </div>
@@ -312,12 +312,12 @@ function cardItem(card, label, argsJson) {
   scroll();
   return {
     done(ok = true) {
-      item.querySelector('.tc-i-badge').innerHTML = `<i class="ph-bold ph-${ok ? 'check' : 'x'} text-[13px]" style="color:${ok ? '#047857' : '#a35555'}"></i>`;
+      item.querySelector('.tc-i-badge').innerHTML = `<i class="ph-bold ph-${ok ? 'check' : 'x'} text-[13px]" style="color:${ok ? '#111827' : '#a35555'}"></i>`;
     }
   };
 }
 function cardFinish(card, text) {
-  card.badge.innerHTML = '<i class="ph-bold ph-check text-[15px]" style="color:#047857"></i>';
+  card.badge.innerHTML = '<i class="ph-bold ph-check text-[15px]" style="color:#111827"></i>';
   card.text.textContent = text;
   card.livebar.remove();
 }
